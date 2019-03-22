@@ -3,13 +3,7 @@
 
 ## Introduction
 
-You learned about train-test-split before, but also noticed that running the model with a different split for train and test can lead to significantly different results. This is one of the many reasons why you'll want to consider cross-valisation!
-
-## Objectives
-
-You will be able to:
-- Explain the superiority of cross-validation over simple validation testing
-- Understand and implement k-fold cross validation in Scikit Learn
+You learned about train-test-split before, but also noticed that running the model with a different split for train and test can lead to significantly different results. This is one of the many reasons why you'll want to consider cross-validation!
 
 ## The problem with train-test-split
 
