@@ -80,7 +80,7 @@ K-Fold Cross Validation expands on the idea of training and testing splits by sp
 
 We can then average the individual results frome each of these linear models to get a Cross-Validation MSE. This will be closer to the model's actual MSE, since "noisy" results that are higher than average will cancel out the "noisy" results that are lower than average.
 
-<img src='cross-val-graphic.png'>
+<img src='./images/new_cross-val-graphic.png' width="800">
 
 You can easily do this in scikit-learn using `cross_val_score`. If you want the mean squared error as an output, you need to specify `scoring` and pass "neg_mean_squared_error". Note that this negates your mean squared error, so larger means better!
 
