@@ -33,9 +33,9 @@ data_fin["acc"]= scaled_acc
 data_fin["disp"]= scaled_disp
 data_fin["horse"] = scaled_horse
 data_fin["weight"] = scaled_weight
-cyl_dummies = pd.get_dummies(data["cylinders"], prefix="cyl")
-yr_dummies = pd.get_dummies(data["model year"], prefix="yr")
-orig_dummies = pd.get_dummies(data["origin"], prefix="orig")
+cyl_dummies = pd.get_dummies(data["cylinders"], prefix="cyl", drop_first=True)
+yr_dummies = pd.get_dummies(data["model year"], prefix="yr", drop_first=True)
+orig_dummies = pd.get_dummies(data["origin"], prefix="orig", drop_first=True)
 mpg = data["mpg"]
 data_fin = pd.concat([mpg, data_fin, cyl_dummies, yr_dummies, orig_dummies], axis=1)
 ```
@@ -56,6 +56,7 @@ from sklearn.metrics import mean_squared_error
 from sklearn.linear_model import LinearRegression
 linreg = LinearRegression()
 import matplotlib.pyplot as plt
+%matplotlib inline
 
 num = 20
 train_err = []
@@ -71,6 +72,10 @@ plt.scatter(list(range(num)), train_err, label='Training Error')
 plt.scatter(list(range(num)), test_err, label='Testing Error')
 plt.legend();
 ```
+
+
+![png](index_files/index_9_0.png)
+
 
 In order to deal with the issues that random sampling can introduce into interpreting the quality of our models, we'll use a more advanced technique called **K-Fold Cross Validation**.
 
