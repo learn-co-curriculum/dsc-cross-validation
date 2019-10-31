@@ -5,6 +5,10 @@
 
 You learned about train-test split before, but also noticed that running the model with a different split for train and test can lead to significantly different results. This is one of the many reasons why you'll want to consider cross-validation!
 
+## Objectives
+You will be able to:
+* Perform cross validation on a model to determine optimal model performance
+
 ## The problem with train-test split
 
 When using train-test split, random samples of data are created for the training and the test set. The problem with this is that the training and test MSE strongly depend on how the training and test sets were created. Let's see how this happens in practice using the auto-mpg data.
@@ -74,7 +78,7 @@ plt.legend();
 ```
 
 
-![png](index_files/index_9_0.png)
+![png](index_files/index_10_0.png)
 
 
 In order to deal with the issues that random sampling can introduce into interpreting the quality of our models, we'll use a more advanced technique called **K-Fold Cross Validation**.
