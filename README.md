@@ -267,7 +267,7 @@ fig.suptitle("Average Cross-Validation Scores");
     
 
 
-Another way, if you have enough folds to make it worthwhile, is to show the distribution of the train vs. test scores using a histogram or a box plot.
+Another way, if you have enough folds to make it worthwhile, is to show the distribution of the train vs. test scores using a histogram or a box plot. *N.B.*: The *x*-axes are different scales, but the focus is on the different shapes of the respective distributions.
 
 
 ```python
