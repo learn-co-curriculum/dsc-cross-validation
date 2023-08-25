@@ -78,7 +78,7 @@ We can then average the individual results from each of these linear models to g
 
 The diagram below gives an example of what cross-validation with `K = 10` might look like:
 
-<img src='./images/new_cross-val-graphic.png' width="800">
+<img src='https://curriculum-content.s3.amazonaws.com/data-science/images/new_cross-val-graphic.png' width="800">
 
 ### Cross-Validation in Scikit-Learn
 
